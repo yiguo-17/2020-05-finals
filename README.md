@@ -2,7 +2,7 @@
 
 ### Problem Descriptions
 
-* `makeRunOn` - Makes the given paragraph a run-on sentence by replacing periods with commas.
+* `makeRunOn` - Makes the given paragraph a run-on sentence by replacing periods with commas. Does not replace the last. (Which makes sense if you think about it.)
 * `totalScore` - sums the scores from every `level` object in the given list. If a `multiplier` parameter is passed as the second parameter, the total is multiplied by it. If a third `bonus` parameter is present, that is added as well, but not multiplied.
 * `nightOwls` - filters the list to return the objects whose property `asleep` is false and whose `localTime` is between `100` and `400` inclusive. It should not modify the original array. **BEWARE**: putting a 0 at the start of a number does NOT do what you think it does--it actually makes it an octal number!--so don't put the numbers in full 24-hour-clock format (i.e., 0100 for 1am and 0200 for 2am). You probably weren't going to anyway, but... let's not make that why we fail this question.
 * `getToBed` - returns a new list where every person object in the given list whose `localTime` is between `100` and `400` inclusive has their `asleep` property set to true. Does not mutate the original list. See warning about starting the number with 0 from previous problem's description.
