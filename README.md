@@ -1,0 +1,10 @@
+# Term 1 Final Exam
+
+### Problem Descriptions
+
+* `makeRunOn` - Makes the given paragraph a run-on sentence by replacing periods with commas.
+* `totalScore` - sums the scores from every `level` object in the given list. If a `multiplier` parameter is passed as the second parameter, the total is multiplied by it. If a third `bonus` parameter is present, that is added as well, but not multiplied.
+* `nightOwls` - filters the list to return the objects whose property `asleep` is false and whose `localTime` is between `100` and `400` inclusive. It should not modify the original array. **BEWARE**: putting a 0 at the start of a number does NOT do what you think it does--it actually makes it an octal number!--so don't put the numbers in full 24-hour-clock format (i.e., 0100 for 1am and 0200 for 2am). You probably weren't going to anyway, but... let's not make that why we fail this question.
+* `getToBed` - returns a new list where every person object in the given list whose `localTime` is between `100` and `400` inclusive has their `asleep` property set to true. Does not mutate the original list. See warning about starting the number with 0 from previous problem's description.
+* `findIndices` - a function that takes a list and another function (a callback) as parameters and returns a new list holding the indices of the list at which, when the corresponding element is passed into the callback function, it returns `true`. (See the test for precise examples!)
+* `Faqtory` - a factory function that returns an object with methods for managing a FAQ list. It contains an array of questions set to empty to start with, an `addQuestion` method for adding questions to the list, and an `answerQuestion` method for answering those questions that have yet to be answered. See tests for details. **NOTE:** the questions being added are objects. Making a helper function that returns a question object may be worth it, but either way, make sure those questions are objects! **HINT** the `id` of a new question can be set by looking at how many questions are already in the list. 
